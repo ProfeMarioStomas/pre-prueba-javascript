@@ -7,8 +7,8 @@ const prisma = new PrismaClient();
 async function main() {
   await prisma.category.createMany({
     data: [
-      { description: 'User' },
-      { description: 'Client' },
+      { description: 'Misterio' },
+      { description: 'Fantasía' },
     ],
     skipDuplicates: true
   });
