@@ -7,8 +7,9 @@ const prisma = new PrismaClient();
 async function main() {
   await prisma.category.createMany({
     data: [
-      { description: 'Misterio' },
-      { description: 'Fantasía' },
+      { description: 'Rock' },
+      { description: 'Metal' },
+      { description: 'Pop' },
     ],
     skipDuplicates: true
   });
